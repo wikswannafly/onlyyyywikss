@@ -1,3 +1,3 @@
 function showAlert() {
-    window.location.href = "https://blogAnda.com";  // Ganti dengan URL yang sesuai
+    window.location.href = "www.pornhub.com";  // Ganti dengan URL yang sesuai
 }
