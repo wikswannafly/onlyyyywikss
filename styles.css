@@ -1,93 +1,39 @@
-/* Reset default margin dan padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Styling untuk body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
-header {
-    color: black;
-    text-align: center;
-    #oak-header {
-    background-image: url("oak.jpg"); /* atau nama gambar jeans lo */
+#oak-header {
+    background-image: url("oak.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
     width: 100vw;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 20px;
-    gap: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+.header-content {
+    text-align: center;
     color: white;
     text-shadow: 1px 1px 5px black;
 }
 
-.logo {
-    height: 60px;         /* Atur tinggi logo */
-    width: auto;          /* Biar nggak gepeng */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.rgb-list li a {
     font-weight: bold;
+    animation: rgbText 3s infinite;
 }
 
-/* Section */
-section {
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-
+@keyframes rgbText {
+    0% { color: red; }
+    33% { color: green; }
+    66% { color: blue; }
+    100% { color: red; }
 }
