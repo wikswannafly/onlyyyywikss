@@ -14,7 +14,26 @@ body {
 
 /* Header */
 header {
+    color: black;
     text-align: center;
+    #oak-header {
+    background-image: url("oak.jpg"); /* atau nama gambar jeans lo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.logo {
+    height: 60px;         /* Atur tinggi logo */
+    width: auto;          /* Biar nggak gepeng */
 }
 
 nav ul {
@@ -70,23 +89,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-#oak-header {
-    background-image: url("oak.jpg"); /* atau nama gambar jeans lo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    gap: 20px;
-    color: white;
-    text-shadow: 1px 1px 5px black;
-}
 
-.logo {
-    height: 60px;         /* Atur tinggi logo */
-    width: auto;          /* Biar nggak gepeng */
-}
 }
